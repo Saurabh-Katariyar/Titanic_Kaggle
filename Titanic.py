@@ -155,6 +155,5 @@ results = the_model.predict(df_test)
 
 final = pd.read_csv('test.csv',usecols = ['PassengerId'])
 final['Survived'] = results
-
-final.to_csv('final.csv')
+final.to_csv('final.csv',index=False)
 
